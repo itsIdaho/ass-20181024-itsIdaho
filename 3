@@ -1,0 +1,20 @@
+/* Arrays Summe*/
+#include <stdio.h>
+
+const int test_data[] = { 1,2,-3,0}; /*const = konstant */
+
+int sumArray(const int sum_data[], unsigned int length){
+    int sum=0;
+    for (int index = 0;index < length;index++){
+        sum = sum + sum_data[index];
+    }
+    return sum;
+}
+
+int main (int argc, char ** argv) {
+    sumArray(test_data,1);
+    int tmp_sum = 0;
+    tmp_sum = sumArray(test_data,1);
+    printf("Die Summe ist %d\n",tmp_sum);
+    return 0;   
+}
